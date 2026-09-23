@@ -1,0 +1,25 @@
+body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+background:linear-gradient(to right,#74ebd5,#acb6e5);
+}
+
+.card{
+display:flex;
+gap:15px;
+padding:30px;
+background:white;
+border-radius:10px;
+box-shadow:0 0 10px gray;
+}
+
+input:focus{
+border:2px solid blue;
+}
+
+button:hover{
+background:blue;
+color:white;
+}

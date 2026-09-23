@@ -1,0 +1,24 @@
+
+p{
+color:blue;
+}
+
+
+.special{
+font-weight:bold;
+}
+
+
+#unique{
+color:red;
+}
+
+
+a[target]{
+background:yellow;
+}
+
+
+div > p{
+background:lightgray;
+}

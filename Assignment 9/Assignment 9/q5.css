@@ -1,0 +1,41 @@
+.buttons{
+display:flex;
+gap:20px;
+justify-content:center;
+}
+
+button{
+padding:12px 20px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.primary{
+background:blue;
+color:white;
+}
+
+.secondary{
+background:gray;
+color:white;
+}
+
+.outline{
+border:2px solid blue;
+background:white;
+}
+
+button:hover{
+transform:translateY(-3px);
+}
+
+button:focus{
+outline:3px solid orange;
+}
+
+button:disabled{
+background:#ccc;
+cursor:not-allowed;
+}
