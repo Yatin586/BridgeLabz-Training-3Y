@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q9 - Form Submit Blocker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Form Submit Blocker with Live Errors</h1>
+
+  <!-- novalidate turns off the browser's own bubbles so our inline errors are used -->
+  <form id="signupForm" novalidate>
+    <label for="nameInput">Name</label>
+    <input type="text" id="nameInput">
+    <p class="error" id="nameError"></p>
+
+    <label for="emailInput">Email</label>
+    <input type="text" id="emailInput">
+    <p class="error" id="emailError"></p>
+
+    <label for="passwordInput">Password</label>
+    <input type="password" id="passwordInput">
+    <p class="error" id="passwordError"></p>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <p id="successMessage" class="success"></p>
+
+  <script src="q9_form_validation.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Q3 - Multi-Step Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Multi-Step Form</h1>
+  <p id="stepIndicator">Step 1 of 3</p>
+
+  <div id="formArea">
+    <!-- Each step is a separate block; only one is visible at a time -->
+    <div class="step" data-step="0">
+      <label for="nameInput">Name</label><br>
+      <input type="text" id="nameInput" placeholder="Your name">
+    </div>
+
+    <div class="step hidden" data-step="1">
+      <label for="emailInput">Email</label><br>
+      <input type="email" id="emailInput" placeholder="you@example.com">
+    </div>
+
+    <div class="step hidden" data-step="2">
+      <label for="passwordInput">Password</label><br>
+      <input type="password" id="passwordInput" placeholder="Minimum 6 characters">
+    </div>
+
+    <p class="error" id="errorMessage"></p>
+
+    <div class="step-buttons">
+      <button id="backBtn">Back</button>
+      <button id="nextBtn">Next</button>
+    </div>
+  </div>
+
+  <div id="summary" class="hidden"></div>
+
+  <script src="q3_multistep_form.js"></script>
+</body>
+</html>
